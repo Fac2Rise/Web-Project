@@ -18,16 +18,14 @@ h2 {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
   color: #f0f0f0;
-  font-family: 'Poppins', sans-serif;
   width: 100%;
-  font-family: 'Poppins', sans-serif;
   animation: fadeIn 3.5s ease-in-out;
-  height: auto;
 }
 
 #header-container {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
   position: absolute;
   top: 20px;
   left: 50%;
@@ -289,3 +287,159 @@ h2 {
   transform: translate(50%, 0) scale(1.1);
 }
 
+.grid-container-1 {  
+  margin-top: 40px;
+  padding: 10px 0;
+  display: grid;
+  background-color: black;
+  grid-template-columns: 1.0fr 0.02fr 0.8fr;
+  grid-template-rows: 0.8fr;
+  gap: 0px 0px 0px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "About-Page . News-Page";
+}
+
+.grid-container-2 {
+  padding: 10px 0;
+  display: grid; 
+  grid-template-columns: 0.8fr 0.02fr 1.0fr; 
+  grid-template-rows: 0.8fr; 
+  gap: 0px 0px; 
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Contact-Page . Iphone-Review-Page";
+}
+
+.About-Page { 
+  grid-area: About-Page; 
+  margin-left: 20px;
+}
+
+.News-Page { 
+  grid-area: News-Page; 
+  margin-right: 20px;
+}
+
+.Contact-Page { 
+  grid-area: Contact-Page; 
+  margin-left: 20px;
+}
+
+.Iphone-Review-Page { 
+  grid-area: Iphone-Review-Page; 
+  margin-right: 20px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  /* margin: 0 auto 40px; */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+  transform: translateY(-10px);
+}
+
+.image-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  transition: all 0.5s ease;
+}
+
+.About-Page .image-content {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), 
+              url('/assets/filip-baotic-DV0mB2uJM34-unsplash\(1\).jpg');
+}
+
+.News-Page .image-content {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), 
+              url('/assets/photo-1511707171634-5f897ff02aa9.jpg');
+}
+
+.Contact-Page .image-content {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), 
+              url('/assets/ameen-almayuf-OQ4tJVXMCYM-unsplash.jpg');
+}
+
+.Iphone-Review-Page .image-content {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), 
+              url('/assets/karol-smoczynski-lcO-m-Exm4I-unsplash.jpg');
+}
+
+.image-container:hover .image-content {
+  transform: scale(1.05);
+  background-size: 110%;
+}
+
+.menu-label {
+  font-size: 1.8rem;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  color: #ffffff;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.7);
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #ffcc00;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.click-hint {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .click-hint {
+  opacity: 1;
+}
+
+.click-hint i {
+  margin-right: 8px;
+  color: #ffcc00;
+}
+
+/* @media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "About Page"
+      "News Page";
+  }
+} */
