@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page - iPhone Blog & Review</title>
+    <link rel="stylesheet" href="contactPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- For icons -->
+</head>
+<body>
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+        <ul class="menu__box">
+            <li><a class="menu__item" href="homePage.html">Home</a></li>
+            <li><a class="menu__item" href="#">About</a></li>
+            <li><a class="menu__item" href="reviewPage.html">Review</a></li>
+            <li><a class="menu__item" href="#">News</a></li>
+            <li><a class="menu__item" href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="header-container">
+        <h2>Contact Us - Meet the Team</h2>
+    </div>
+
+    <div id="main-content">
+        <p class="intro-text">Get to know the brains behind our iPhone Blog and Review Website. We're passionate about helping you make informed decisions on Apple products!</p>
+        
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="assets/team-limjunhan.jpg" alt="Lim Jun Han" class="team-photo">
+                <h3>Lim Jun Han</h3>
+                <p class="student-id">S76171</p>
+                <p class="bio">Tech enthusiast and software engineering student specializing in web design. Loves dissecting iPhone features for unbiased reviews.</p>
+                <div class="contact-info">
+                    <i class="fas fa-envelope"></i> limjunhan@example.com<br>
+                    <i class="fas fa-phone"></i> +60 123 456 789
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="assets/team-wongcaiyi.jpg" alt="Wong Cai Yi" class="team-photo">
+                <h3>Wong Cai Yi</h3>
+                <p class="student-id">S76084</p>
+                <p class="bio">Creative writer and UI/UX designer. Focuses on making tech content accessible and engaging for all users.</p>
+                <div class="contact-info">
+                    <i class="fas fa-envelope"></i> wongcaiyi@example.com<br>
+                    <i class="fas fa-phone"></i> +60 987 654 321
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="assets/team-ainsufiah.jpg" alt="Ain Sufiah Binti Azman" class="team-photo">
+                <h3>Ain Sufiah Binti Azman</h3>
+                <p class="student-id">S76105</p>
+                <p class="bio">Data analyst and content strategist. Ensures our reviews are data-driven and helpful for first-time buyers and pros alike.</p>
+                <div class="contact-info">
+                    <i class="fas fa-envelope"></i> ainsufiah@example.com<br>
+                    <i class="fas fa-phone"></i> +60 555 123 456
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 iPhone Blog & Review. All rights reserved.</p>
+    </div>
+
+    <script src="contactPage.js"></script>
+</body>
+</html>
