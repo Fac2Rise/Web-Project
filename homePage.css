@@ -363,22 +363,22 @@ h2 {
 
 .About-Page .image-content {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), 
-              url('/assets/filip-baotic-DV0mB2uJM34-unsplash\(1\).jpg');
+              url('assets/filip-baotic-DV0mB2uJM34-unsplash(1).jpg');
 }
 
 .News-Page .image-content {
   background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), 
-              url('/assets/photo-1511707171634-5f897ff02aa9.jpg');
+              url('assets/photo-1511707171634-5f897ff02aa9.jpg');
 }
 
 .Contact-Page .image-content {
   background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), 
-              url('/assets/ameen-almayuf-OQ4tJVXMCYM-unsplash.jpg');
+              url('assets/ameen-almayuf-OQ4tJVXMCYM-unsplash.jpg');
 }
 
 .Iphone-Review-Page .image-content {
   background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), 
-              url('/assets/karol-smoczynski-lcO-m-Exm4I-unsplash.jpg');
+              url('assets/karol-smoczynski-lcO-m-Exm4I-unsplash.jpg');
 }
 
 .image-container:hover .image-content {

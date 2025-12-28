@@ -11,16 +11,16 @@ let targetUrl = '';
 function handleImageClick() {
     if(this === imageContainer1) {
         alert('Navigating to About Page');
-        //window.location.href = 'aboutPage.html';
+        window.location.href = 'aboutPage.html';
     } else if(this === imageContainer2) {
         alert('Navigating to News Page');
         //window.location.href = 'newsPage.html';
     } else if(this === imageContainer3) {
         alert('Navigating to Contact Page');
-        //window.location.href = 'contactPage.html';
+        window.location.href = 'contactPage.html';
     } else if(this === imageContainer4) {
         alert('Navigating to Review Page');
-        //window.location.href = 'reviewPage.html';
+        window.location.href = 'reviewPage.html';
     }
 }
 
