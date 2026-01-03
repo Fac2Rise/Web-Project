@@ -3,6 +3,7 @@ const imageContainer1 = document.getElementById('clickableImage1');
 const imageContainer2 = document.getElementById('clickableImage2');
 const imageContainer3 = document.getElementById('clickableImage3');
 const imageContainer4 = document.getElementById('clickableImage4');
+const feedbackButton = document.getElementById('feedback-Button');
 
 // Default URL to navigate to when image is clicked
 let targetUrl = '';
@@ -23,6 +24,11 @@ function handleImageClick() {
         window.location.href = 'reviewPage.html';
     }
 }
+
+feedbackButton.addEventListener('click', function() {
+    alert('Feedback button clicked!');
+    window.location.href = 'contactPage.html';
+});
 
 // Add click event listener to the image container
 imageContainer1.addEventListener('click', handleImageClick);
