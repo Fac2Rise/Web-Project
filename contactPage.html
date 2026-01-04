@@ -1,79 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page - iPhone Blog & Review</title>
-    <link rel="stylesheet" href="contactPage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- For icons -->
-</head>
-<body>
-    <div class="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
-            <span></span>
-        </label>
-        <ul class="menu__box">
-            <li><a class="menu__item" href="homePage.html">Home</a></li>
-            <li><a class="menu__item" href="aboutPage.html">About</a></li>
-            <li><a class="menu__item" href="reviewPage.html">Review</a></li>
-            <li><a class="menu__item" href="#">News</a></li>
-            <li><a class="menu__item" href="contactPage.html">Contact</a></li>
-        </ul>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Page</title>
+        <link rel="stylesheet" href="contactPage.css">
+    </head>
 
-    <div id="header-container">
-        <h2>Contact Us - Meet the Team</h2>
-    </div>
+    <body>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
 
-    <div id="main-content">
-        <p class="intro-text">Get to know the brains behind our iPhone Blog and Review Website. We're passionate about helping you make informed decisions on Apple products!</p>
-        
-        <div class="team-grid">
-            <div class="team-member">
-                <img src="assets/professionalPhoto.jpeg" alt="Tech Lead" class="team-photo">
-                <h3>Lim Jun Han</h3>
-                <p class="bio">Tech enthusiast and software engineering student specializing in web design. Loves dissecting iPhone features for unbiased reviews.</p>
-                <div class="contact-info">
-                    <i class="fas fa-envelope"></i> limjunhan@example.com<br>
-                    <i class="fas fa-phone"></i> +60 123 456 789
-                </div>
-            </div>
-            <div class="team-member">
-                <img src="assets/cy1-removebg-preview.png" alt="Media Specialist" class="team-photo">
-                <h3>Wong Cai Yi</h3>
-                <p class="bio">Creative writer and UI/UX designer. Focuses on making tech content accessible and engaging for all users.</p>
-                <div class="contact-info">
-                    <i class="fas fa-envelope"></i> wongcaiyi@example.com<br>
-                    <i class="fas fa-phone"></i> +60 987 654 321
-                </div>
-            </div>
-            <div class="team-member">
-                <img src="sufiah.jpg" alt="Data Specialist" class="team-photo">
-                <h3>Ain Sufiah Azman</h3>
-                <p class="bio">Data analyst and content strategist. Ensures our reviews are data-driven and helpful for first-time buyers and pros alike.</p>
-                <div class="contact-info">
-                    <i class="fas fa-envelope"></i> ainsufiah@example.com<br>
-                    <i class="fas fa-phone"></i> +60 555 123 456
-                </div>
-            </div>
+            <ul class="menu__box">
+                <li><a class="menu__item" href="homePage.html">Home</a></li>
+                <li><a class="menu__item" href="aboutPage.html">About</a></li>
+                <li><a class="menu__item" href="reviewPage.html">Review</a></li>
+                <li><a class="menu__item" href="newsPage.html">News</a></li>
+                <li><a class="menu__item" href="contactPage.html">Contact</a></li>
+            </ul>
         </div>
 
-        <div class="contact-form">
-            <h3>Send us your feedback</h3>
-            <form action="#" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit">Submit</button>
+        <div id="header-container">
+            <h2>Contact Us - Get in Touch</h2>
+        </div>
+
+        <div class="image-container">
+            <img src="assets/contact-hero.jpg" alt="Contact Us Image" id="contactImage">
+            <div class="image-text">Reach Out: <br>We're Here to Help</div>
+        </div>
+
+        <div class="container">
+            <h3>Send Us a Message</h3>
+            <div class="subtitle">
+                Have questions about the iPhone 17, feedback on our reviews, or suggestions for the site? 
+                Fill out the form below, and we'll get back to you as soon as possible.
+            </div>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your message here..." rows="5" required></textarea>
+
+                <button type="submit" id="submitButton">Send Message</button>
             </form>
         </div>
-    </div>
 
-    <div class="footer">
-        <p>&copy; 2025 iPhone Blog & Review. All rights reserved.</p>
-    </div>
+        <div class="container">
+            <h3>Contact Details</h3>
+            <div class="subtitle">
+                <p><strong>Email:</strong> contact@iphone17blog.com</p>
+                <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+                <p><strong>Address:</strong> 123 Tech Street, Silicon Valley, CA 94000</p>
+                <p><strong>Follow Us:</strong></p>
+                <ul class="social-links">
+                    <li><a href="https://twitter.com/iphone17blog" target="_blank">Twitter</a></li>
+                    <li><a href="https://facebook.com/iphone17blog" target="_blank">Facebook</a></li>
+                    <li><a href="https://instagram.com/iphone17blog" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
 
-    <script src="contactPage.js"></script>
-</body>
+        <footer>
+            <p>&copy; 2025 iPhone 17 Blog and Review. All rights reserved.</p>
+        </footer>
+
+        <script src="contactPage.js"></script>
+    </body>
 </html>
