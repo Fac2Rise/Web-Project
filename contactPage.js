@@ -1,20 +1,22 @@
-// Hamburger menu toggle (copied from homePage.js logic)
+// Hamburger menu functionality (copied from your other pages)
 const menuToggle = document.getElementById('menu__toggle');
 const menuBox = document.querySelector('.menu__box');
 
-menuToggle.addEventListener('change', function() {
-    if (this.checked) {
-        menuBox.style.visibility = 'visible';
-        menuBox.style.left = '0';
-    } else {
-        menuBox.style.visibility = 'hidden';
-        menuBox.style.left = '-100%';
-    }
-});
+// Form handling
+const contactForm = document.getElementById('contactForm');
 
-// Optional: Add form submission alert
-const contactForm = document.querySelector('.contact-form form');
-contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Thank you for your message! We\'ll get back to you soon.');
+contactForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Simple validation (HTML required attributes handle most, but you can add more here)
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (name && email && message) {
+        alert('Thank you for your message! We\'ll get back to you soon.');
+        contactForm.reset(); // Clear the form
+    } else {
+        alert('Please fill in all required fields.');
+    }
 });
