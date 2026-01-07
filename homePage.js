@@ -15,7 +15,7 @@ function handleImageClick() {
         window.location.href = 'aboutPage.html';
     } else if(this === imageContainer2) {
         alert('Navigating to News Page');
-        //window.location.href = 'newsPage.html';
+        window.location.href = 'newsPage.html';
     } else if(this === imageContainer3) {
         alert('Navigating to Contact Page');
         window.location.href = 'contactPage.html';
