@@ -36,6 +36,7 @@ body {
     height: auto;
     max-height: 100vh;
     margin-top: 100px; /* Adjust to lower the video */
+    background-image: url(assets/placeholder-iPhone.jpg);
 }
 
 #menu__toggle {
