@@ -201,7 +201,7 @@ image-track-container {
 footer {
     margin-top: 40px;
     position: absolute;
-    top: 315%;
+    top: 425%;
     width: 100%;
     height: 60px;
     background-color: #000000;
@@ -211,4 +211,92 @@ footer {
     align-items: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
+}
+
+.table-container {
+    position: absolute;
+    top: 315%;
+    margin: 60px auto;
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1a1a1a;
+}
+
+thead {
+    background-color: #000000;
+}
+
+th {
+    padding: 22px 16px;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ff7b00;
+    border-bottom: 3px solid #ff7b00;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 20px 16px;
+    border-bottom: 1px solid #333333;
+    font-size: 1.05rem;
+    color: #cccccc;
+}
+
+.technology-td {
+    color: #cccccc;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover {
+    background-color: #222222;
+}
+
+.camera-type {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: rgba(255, 123, 0, 0.1);
+    color: #ff7b00;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.highlight {
+    color: #ff7b00;
+    font-weight: 700;
+}
+
+.spec-icon {
+    color: #ff7b00;
+    margin-right: 8px;
+    width: 20px;
+    text-align: center;
+}
+
+.key-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.feature-tag {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: #cccccc;
 }
